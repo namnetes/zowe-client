@@ -1,0 +1,17 @@
+[project]
+name = "zowe-docs"
+version = "0.1.0"
+description = "Documentation technique Zowe"
+requires-python = ">=3.11"
+dependencies = [
+    "mkdocs-material>=9.5",
+    "mkdocs-git-revision-date-localized-plugin>=1.2",
+    "mkdocs-minify-plugin>=0.8",
+    "mkdocs-glightbox>=0.4",
+    "mkdocs-awesome-pages-plugin>=2.9",
+    "mkdocs-redirects>=1.2",
+    "pymdown-extensions>=10.7",
+]
+
+[dependency-groups]
+dev = []

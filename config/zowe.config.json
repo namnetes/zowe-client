@@ -1,0 +1,35 @@
+{
+  "$schema": "./zowe.schema.json",
+  "profiles": {
+    "rse_sandbox": {
+      "type": "rse",
+      "properties": {
+        "host": "sysb.prodinfo.fr.cly",
+        "port": 6800,
+        "rejectUnauthorized": false
+      },
+      "secure": ["user", "password"]
+    },
+    "rse_dev": {
+      "type": "rse",
+      "properties": {
+        "host": "dev.prodfindo.fr.cly",
+        "port": 6800,
+        "rejectUnauthorized": false
+      },
+      "secure": ["user", "password"]
+    },
+    "global_base": {
+      "type": "base",
+      "properties": {
+        "rejectUnauthorized": false
+      },
+      "secure": ["user", "password"]
+    }
+  },
+  "defaults": {
+    "rse": "rse_sandbox",
+    "base": "global_base"
+  },
+  "autoStore": true
+}
