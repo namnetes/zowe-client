@@ -39,10 +39,10 @@ zowe-client/
 │   └── index.md
 │
 ├── examples/                    # Exemples de code par langage / outil
-│   ├── cli/                     # Scripts Zowe CLI et automatisation
-│   ├── java-sdk/                # Exemples SDK Java (Maven)
+│   ├── python-sdk/              # Exemples SDK Python (privilégié)
 │   ├── nodejs-sdk/              # Exemples SDK Node.js
-│   └── python-sdk/              # Exemples SDK Python (preview)
+│   ├── java-sdk/                # Exemples SDK Java (Maven)
+│   └── cli/                     # Scripts Zowe CLI et automatisation
 │
 ├── config/                      # Templates de configuration
 │   ├── zowe.config.json         # Team configuration — profils RSE API
@@ -111,12 +111,12 @@ make help
 
 ### Exemples de code
 
-| Répertoire | Description |
-|---|---|
-| `examples/cli/` | Scripts shell utilisant Zowe CLI (datasets, USS, jobs) |
-| `examples/java-sdk/` | SDK Java — projet Maven avec exemples datasets et jobs |
-| `examples/nodejs-sdk/` | SDK Node.js — listage de datasets, soumission de jobs |
-| `examples/python-sdk/` | Exemples SDK Python preview |
+| Priorité | Répertoire | Description |
+|---|---|---|
+| 1 — Privilégié | `examples/python-sdk/` | SDK Python — exemples datasets, USS, jobs |
+| 2 | `examples/nodejs-sdk/` | SDK Node.js — listage de datasets, soumission de jobs |
+| 3 | `examples/java-sdk/` | SDK Java — projet Maven avec exemples datasets et jobs |
+| — | `examples/cli/` | Scripts Zowe CLI (automatisation, pipelines) |
 
 ---
 

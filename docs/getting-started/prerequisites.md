@@ -363,12 +363,25 @@ Le profil `rse_lpar1` apparaît dans les vues **Data Sets**, **USS** et **Jobs**
 
 Tous les SDKs fonctionnent nativement sur macOS ARM64 et Ubuntu x86-64.
 
-| SDK | Prérequis | Installation |
-|---|---|---|
-| **Java SDK** | JRE 17+ ✅ (JDK 21 conforme) | Maven / Gradle |
-| **Kotlin SDK** | JRE 17+ ✅ | Maven / Gradle |
-| **Node.js SDK** | Node.js 22 LTS ✅ | `npm install <package>` |
-| **Python SDK** *(preview)* | Python 3.6+ | `pip install <package>` |
+L'ordre d'usage privilégié dans ce projet est le suivant :
+
+| Priorité | SDK | Prérequis | Installation |
+|---|---|---|---|
+| 1 — Privilégié | **Python SDK** | Python 3.6+ | `pip install <package>` |
+| 2 | **Node.js SDK** | Node.js 22 LTS ✅ | `npm install <package>` |
+| 3 | **Java SDK** | JRE 17+ ✅ (JDK 21 conforme) | Maven / Gradle |
+
+### Python SDK
+
+```bash
+pip install zos-files-for-zowe-sdk
+```
+
+### Node.js SDK
+
+```bash
+npm install @zowe/zos-files-for-zowe-sdk
+```
 
 ### Java SDK (Maven)
 
@@ -378,12 +391,6 @@ Tous les SDKs fonctionnent nativement sur macOS ARM64 et Ubuntu x86-64.
   <artifactId>zos-files-for-zowe-sdk</artifactId>
   <version>LATEST</version>
 </dependency>
-```
-
-### Node.js SDK
-
-```bash
-npm install @zowe/zos-files-for-zowe-sdk
 ```
 
 ---
